@@ -56,3 +56,31 @@ def main():
 
 
 main()
+
+
+"""
+
+Perceptron Class:
+__init__(self, input_size): Initializes the perceptron with zero weights and bias. The input size corresponds to the number of input features.
+activation(self, x): Defines the step function as the activation function. Returns 1 if the input x is greater than or equal to 0, otherwise returns 0.
+predict(self, x): Computes the output of the perceptron by taking the dot product of input x and weights, adding bias, and applying the activation function.
+train(self, X, y, learning_rate=0.1, epochs=100): Trains the perceptron using the given training data X and labels y for a specified number of epochs. It adjusts the weights and bias using the perceptron learning rule.
+
+ascii_to_binary() Function:
+Converts a decimal digit (0-9) to its 7-bit binary representation. Each digit is represented as a 7-bit binary array.
+calculate_accuracy() Function:
+Calculates the accuracy of the model by comparing the true labels y_true with the predicted labels y_pred.
+
+main() Function:
+Prepares the training data (X_train, y_train) and test data (X_test) using ASCII representations of numbers and their binary equivalents.
+Creates an instance of the Perceptron class and trains it on the training data.
+Tests the trained perceptron on the test data to predict whether each number is even or odd.
+Calculates and prints the accuracy of the model.
+
+Execution:
+The main() function is called to start the program.
+The perceptron is trained on binary representations of numbers from 0 to 9, where the labels indicate whether the numbers are even or odd.
+The trained perceptron is then used to predict whether each test number is even or odd, and the results are printed.
+Finally, the accuracy of the perceptron model is calculated and displayed.
+
+"""
