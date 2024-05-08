@@ -14,7 +14,7 @@ class HopfieldNetwork:
         energy = -0.5 * np.dot(np.dot(pattern, self.weights), pattern)
         return np.sign(np.dot(pattern, self.weights) + energy)
 
-if __name__ == '__main__':
+def main():
     patterns = np.array([
         [1, 1, -1, -1],
         [-1, -1, 1, 1],
@@ -29,3 +29,21 @@ if __name__ == '__main__':
         prediction = network.predict(pattern)
         print('Input pattern:', pattern)
         print('Predicted pattern:', prediction)
+
+main()
+
+"""
+
+HopfieldNetwork class:
+__init__: Initializes a Hopfield network with a specified number of neurons (n_neurons). It initializes the weights matrix to zeros.
+train: Trains the network by updating the weights based on the outer product of each input pattern.
+predict: Predicts the output pattern based on the trained weights and input pattern.
+
+if __name__ == '__main__': block:
+Defines the main execution block. This ensures that the following code runs only when the script is executed directly (not imported as a module).
+Defines four input patterns stored in the patterns NumPy array.
+Calculates the number of neurons based on the shape of the patterns array.
+Creates an instance of the HopfieldNetwork class and trains it with the input patterns.
+Iterates over each input pattern, predicts the output pattern using the trained network, and prints the input and predicted patterns.
+
+"""
