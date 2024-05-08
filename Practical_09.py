@@ -39,7 +39,7 @@ __init__: Initializes a Hopfield network with a specified number of neurons (n_n
 train: Trains the network by updating the weights based on the outer product of each input pattern.
 predict: Predicts the output pattern based on the trained weights and input pattern.
 
-if __name__ == '__main__': block:
+main():
 Defines the main execution block. This ensures that the following code runs only when the script is executed directly (not imported as a module).
 Defines four input patterns stored in the patterns NumPy array.
 Calculates the number of neurons based on the shape of the patterns array.
