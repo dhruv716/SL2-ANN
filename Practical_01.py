@@ -77,3 +77,36 @@ plt.grid(True)
 
 plt.tight_layout()
 plt.show()
+
+"""
+Importing Libraries:
+import numpy as np: Imports the NumPy library for numerical computations.
+import matplotlib.pyplot as plt: Imports the Matplotlib library for plotting graphs.
+
+Activation Functions:
+sigmoid(x): Defines the sigmoid activation function.
+tanh(x): Defines the hyperbolic tangent (tanh) activation function.
+relu(x): Defines the Rectified Linear Unit (ReLU) activation function.
+leaky_relu(x, alpha): Defines the Leaky ReLU activation function with an optional parameter alpha.
+prelu(x, alpha): Defines the Parametric ReLU (PReLU) activation function with a learnable parameter alpha.
+elu(x, alpha): Defines the Exponential Linear Unit (ELU) activation function with an optional parameter alpha.
+softmax(x): Defines the softmax activation function, which is typically used in the output layer for multi-class classification tasks.
+linear(x): Defines the linear activation function, which simply returns the input value unchanged.
+
+Input Values:
+x_values: Generates a range of input values from -5 to 5.
+
+Plotting:
+The plt.figure(figsize=(15, 10)) line creates a new figure with a specified size.
+Subplots are created using plt.subplot to plot each activation function.
+Each subplot displays the graph of a specific activation function using plt.plot.
+Titles are added to each subplot using plt.title.
+plt.grid(True) adds a grid to each subplot.
+Finally, plt.tight_layout() adjusts the layout to prevent overlapping subplots, and plt.show() displays the entire plot.
+
+
+
+
+
+
+
