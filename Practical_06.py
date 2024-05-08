@@ -62,8 +62,9 @@ while True:
         print("Invalid choice. Please enter a number from 1 to 4.")
 
 
-    """Output: 
-    Model trained successfully!
+"""Output: 
+
+Model trained successfully!
 
 Menu:
 1. Test Model
@@ -116,5 +117,36 @@ Menu:
 4. Exit
 Enter your choice (1-4): 4
 Exiting program.
+
+
+Explanation: 
+
+Importing Libraries:
+import numpy as np: Imports the NumPy library for numerical computations.
+from sklearn.neural_network import MLPClassifier: Imports the Multi-Layer Perceptron (MLP) classifier from scikit-learn, which is used to train a neural network.
+from sklearn.metrics import accuracy_score: Imports the accuracy_score function from scikit-learn, which is used to calculate the accuracy of the model.
+
+Defining Patterns:
+patterns: Dictionary containing patterns for numbers 0, 1, 2, and 3, represented as binary matrices.
+Data Preparation:
+X: Flattens the patterns into 1D arrays and stores them in a list.
+y: Stores the corresponding labels for each pattern.
+
+Creating and Training the Model:
+model: Creates an MLP classifier with a single hidden layer containing 10 neurons and a maximum of 1000 iterations for training.
+model.fit(): Trains the MLP classifier using the flattened patterns and their corresponding labels.
+
+Testing the Model:
+test_model(): Function to test the trained model by providing a sample pattern. It flattens the pattern, predicts the label using the trained model, and prints the predicted label.
+
+Displaying Accuracy:
+display_accuracy(): Function to calculate and display the accuracy of the trained model using the entire dataset.
+Predicting Number based on User Input:
+predict_number(): Function to predict the number based on user input. It prompts the user to enter the pattern for the number and predicts the label using the trained model.
+
+Main Menu:
+Displays a menu with options to test the model, display accuracy, predict a number based on user input, or exit the program.
+Accepts user input for selecting an option and performs the corresponding action based on the choice.
+
     
-    """
+"""
