@@ -49,3 +49,32 @@ def main():
 
 
 main()
+
+"""
+
+McCullochPittsNN Class:
+__init__(self, num_inputs): Initializes the MP neuron with a given number of inputs. It sets the initial weights to zero and the threshold to zero.
+set_weights(self, weights): Sets the weights of the neuron. It raises a ValueError if the number of weights provided doesn't match the number of inputs.
+set_threshold(self, threshold): Sets the threshold of the neuron.
+activation_function(self, net_input): Defines the activation function of the neuron, which returns 1 if the net input is greater than the threshold, otherwise returns 0.
+forward_pass(self, inputs): Performs a forward pass through the neuron, computing the net input and applying the activation function to produce the output.
+
+generate_ANDNOT() Function:
+Initializes an MP neuron with 2 inputs and sets the weights and threshold for the ANDNOT function.
+Generates the truth table for the ANDNOT function by iterating over all possible input combinations and printing the corresponding outputs.
+
+main() Function:
+Provides a menu-driven interface for the user.
+Option 1 allows the user to generate the truth table for the ANDNOT function using the generate_ANDNOT() function.
+Option 2 exits the program.
+
+Execution:
+The main() function is called to start the program.
+The user is prompted to choose an option from the menu.
+If the user selects option 1, the truth table for the ANDNOT function is generated and displayed.
+If the user selects option 2, the program exits.
+
+"""
+
+
+
