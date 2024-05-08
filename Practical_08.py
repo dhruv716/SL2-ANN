@@ -42,3 +42,38 @@ print("Input:")
 print(X)
 print("Output:")
 print(output_layer)
+
+
+"""
+
+Importing Libraries:
+import numpy as np: Imports the NumPy library for numerical computations.
+
+Defining Activation Functions:
+sigmoid(x): Defines the sigmoid activation function, which returns the sigmoid of the input.
+sigmoid_derivative(x): Defines the derivative of the sigmoid function, which is used in backpropagation.
+
+Defining Input and Output Datasets:
+X: Defines the input dataset containing four sets of binary values (0 or 1).
+y: Defines the corresponding output dataset (labels) for the input dataset.
+
+Defining Hyperparameters:
+learning_rate: Sets the learning rate, which determines the step size during gradient descent.
+num_epochs: Specifies the number of epochs (iterations) for training the neural network.
+
+Initializing Weights:
+hidden_weights: Initializes the weights of the connections between the input and hidden layers with random values between -1 and 1.
+output_weights: Initializes the weights of the connections between the hidden and output layers similarly.
+
+Training the Neural Network:
+Iterates over the specified number of epochs.
+Performs forward propagation to calculate the output of the neural network.
+Computes the error between the predicted output and the actual output.
+Performs backpropagation to update the weights based on the error using gradient descent.
+Updates the weights of both hidden and output layers based on the calculated deltas and learning rate.
+
+Displaying Input and Output:
+Prints the input dataset X.
+Prints the final output layer after training, which represents the predicted outputs for the input dataset.
+
+"""
