@@ -105,6 +105,9 @@ plt.grid(True) adds a grid to each subplot.
 Finally, plt.tight_layout() adjusts the layout to prevent overlapping subplots, and plt.show() displays the entire plot.
 
 
+"""
+
+
 
 
 
